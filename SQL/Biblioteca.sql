@@ -41,14 +41,13 @@ create funcionarios(
 create Livros(
     id_livros int primary key auto_increment,
     titulo varchar(100) not null,
-    subtituto varchar(100) not null,
-    edicao varchar(50) not null,
-    idioma varchar(50) not null,
-    genero varchar(50) not null,
-    ano_publicacao int not null,
-    codigo_livro int not null,
-    id_autores int not null,
-    foreign key (id_autores) references Autores(id_autores)
+    subtituto varchar(200),
+    editora varchar(200),
+    autor varchar(100) not null,
+    edicao varchar(20),
+    ano_publicacao year,
+    isbn varchar(20),
+    quantidade int
 );
 create Emprestimos(
     id_emprestimos int primary key auto_increment,
