@@ -73,3 +73,12 @@ create Multas(
     data_multas date not null,
     foreign key (id_emprestimos) references Emprestimos(id_emprestimos)
 );
+
+create itens_emprestimo(
+    id_item int primary key auto_increment,
+    id_emprestimos int not null,
+    id_livros int not null,
+    quantidade int not null,
+    foreign key (id_emprestimos) references emprestimos(id_emprestimos),
+    foreign key (id_livros) references livros(id_livros)
+);
