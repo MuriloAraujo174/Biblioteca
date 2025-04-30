@@ -31,7 +31,7 @@ create Clientes(
 create funcionarios(
     id_funcionarios int primary key auto_increment,
     nome varchar(50) not null,
-    data_nascimento date not null,
+    data_nascimento date,
     cpf varchar(15) unique not null,
     endereco varchar(100) not null,
     telefone varchar(15) not null
@@ -47,6 +47,7 @@ create Livros(
     edicao varchar(20),
     ano_publicacao year,
     isbn varchar(20),
+    idioma varchar(20),
     quantidade int
 );
 create Emprestimos(
