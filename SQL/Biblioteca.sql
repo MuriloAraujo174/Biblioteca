@@ -1,7 +1,7 @@
 create database SistemaBiblioteca;
 use SistemaBiblioteca;
 create table Autores(
-    id_autores int primary key auto_increment,
+    id_autores int primary key auto_increment not null,
     nome varchar(50) not null,
     nacionalidade varchar(50) not null,
     editora varchar(50) not null,
@@ -9,11 +9,11 @@ create table Autores(
     data_nascimento date not null
 );
 
-create Usuarios(
+create Cliente(
     id_usuarios int primary key auto_increment,
     nome_completo varchar(50) not null,
     data_nascimento date,
-    cpf varchar(15) unique,
+    cpf varchar(15) unique not null,
     endereco varchar(100) not null,
     telefone varchar(15) not null,
     email varchar(50) not null,
