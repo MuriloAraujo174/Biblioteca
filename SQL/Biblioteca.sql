@@ -9,8 +9,13 @@ create table Autores(
     data_nascimento date not null
 );
 
+<<<<<<< HEAD
 create Cliente(
     id_usuarios int primary key auto_increment,
+=======
+create Clientes(
+    id_Clientes int primary key auto_increment,
+>>>>>>> 39d7cc6dcfd31d9dedc6dc2d0758fbb89c4c40f5
     nome_completo varchar(50) not null,
     data_nascimento date,
     cpf varchar(15) unique not null,
@@ -46,4 +51,17 @@ create Emprestimos(
     status varchar(20) not null,
     foreign key (id_livros) references Livros(id_livros),
     foreign key (id_usuarios) references Usuarios(id_usuarios)
+);
+create Devolucoes(
+    id_devolucoes int primary key auto_increment,
+    id_emprestimos int not null,
+    data_devolucao date not null,
+    foreign key (id_emprestimos) references Emprestimos(id_emprestimos)
+);
+create Multas(
+    id_multas int primary key auto_increment,
+    id_emprestimos int not null,
+    valor decimal(10,2) not null,
+    data_multas date not null,
+    foreign key (id_emprestimos) references Emprestimos(id_emprestimos)
 );
