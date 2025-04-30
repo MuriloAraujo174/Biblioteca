@@ -1,5 +1,6 @@
 create database SistemaBiblioteca;
 use SistemaBiblioteca;
+
 create table Autores(
     id_autores int primary key auto_increment not null,
     nome varchar(50) not null,
@@ -8,7 +9,6 @@ create table Autores(
     codigo_autor int not null,
     data_nascimento date not null
 );
-
 
 create Clientes(
     id_Clientes int primary key auto_increment,
@@ -28,6 +28,7 @@ create Clientes(
     email varchar(50) not null,
     senha varchar(20) not null
 );
+
 create funcionarios(
     id_funcionarios int primary key auto_increment,
     nome varchar(50) not null,
@@ -38,6 +39,7 @@ create funcionarios(
     email varchar(50) not null,
     senha varchar(20) not null
 );
+
 create Livros(
     id_livros int primary key auto_increment,
     titulo varchar(100) not null,
@@ -50,6 +52,7 @@ create Livros(
     idioma varchar(20),
     quantidade int
 );
+
 create Emprestimos(
     id_emprestimos int primary key auto_increment,
     id_livros int not null,
@@ -60,12 +63,14 @@ create Emprestimos(
     foreign key (id_livros) references Livros(id_livros),
     foreign key (id_usuarios) references Usuarios(id_usuarios)
 );
+
 create Devolucoes(
     id_devolucoes int primary key auto_increment,
     id_emprestimos int not null,
     data_devolucao date not null,
     foreign key (id_emprestimos) references Emprestimos(id_emprestimos)
 );
+
 create Multas(
     id_multas int primary key auto_increment,
     id_emprestimos int not null,
