@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="6a2b47f5-0096-4d8f-b11b-992bc63a9319" name="Changes" comment="Começei a mecher no arquivo java para criar a validação do email de cadastro do sistema, e foi criado também a calse abstract Email" />
+=======
     <list default="true" id="6a2b47f5-0096-4d8f-b11b-992bc63a9319" name="Changes" comment="Merge branch 'main' of https://github.com/MuriloAraujo174/Biblioteca">
-      <change afterPath="$PROJECT_DIR$/CadastroDeClientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.jav" beforeDir="false" />
     </list>
+>>>>>>> bbb0ec0eeb5ebd12d11e9e3e02f6b54dab98d3cc
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,17 +26,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2wSLzm0LOfemO8zCU0AIIOtBKW2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+=======
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2wSLzm0LOfemO8zCU0AIIOtBKW2" />
+>>>>>>> bbb0ec0eeb5ebd12d11e9e3e02f6b54dab98d3cc
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "Application.Main.executor": "Run",
+=======
+>>>>>>> bbb0ec0eeb5ebd12d11e9e3e02f6b54dab98d3cc
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -44,6 +57,23 @@
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
+
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Biblioteca-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+=======
+>>>>>>> bbb0ec0eeb5ebd12d11e9e3e02f6b54dab98d3cc
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6a2b47f5-0096-4d8f-b11b-992bc63a9319" name="Changes" comment="" />
@@ -60,7 +90,27 @@
       <option name="project" value="LOCAL" />
       <updated>1746030571084</updated>
     </task>
+
+    <task id="LOCAL-00002" summary="Começei a mecher no arquivo java para criar a validação do email de cadastro do sistema, e foi criado também a calse abstract Email">
+      <option name="closed" value="true" />
+      <created>1746035588689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746035588689</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Começei a mecher no arquivo java para criar a validação do email de cadastro do sistema, e foi criado também a calse abstract Email">
+      <option name="closed" value="true" />
+      <created>1746035626392</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746035626392</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+=======
     <option name="localTasksCounter" value="2" />
+>>>>>>> bbb0ec0eeb5ebd12d11e9e3e02f6b54dab98d3cc
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +126,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'main' of https://github.com/MuriloAraujo174/Biblioteca" />
+
+    <MESSAGE value="Atualização de arquivos java e coreção de bug sql tabelas create sem mo table não funcionava no mysql" />
+    <MESSAGE value="Começei a mecher no arquivo java para criar a validação do email de cadastro do sistema, e foi criado também a calse abstract Email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Começei a mecher no arquivo java para criar a validação do email de cadastro do sistema, e foi criado também a calse abstract Email" />
+=======
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of https://github.com/MuriloAraujo174/Biblioteca" />
+>>>>>>> bbb0ec0eeb5ebd12d11e9e3e02f6b54dab98d3cc
   </component>
 </project>

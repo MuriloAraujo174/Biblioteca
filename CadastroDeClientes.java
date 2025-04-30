@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.Scanner;
 
-public class CadastroDeClientes extends Email {
+public class CadastroDeClientes implements ValidDados {
     // importe da classe scanner para o sistema
 
     Scanner scanner = new Scanner(System.in);
@@ -17,22 +17,42 @@ public class CadastroDeClientes extends Email {
 
     //  Aqui vai os metodos do sistema onde vai as funcionalidades de cadastro a validações
 
-    public void obterEmail() {
-        System.out.println("Digite o seu email por favor: ");
-        email = scanner.nextLine();
-    }
-
     @Override
     public boolean validEmail() {
         boolean continuar;
 
-        if(email.contains("@") && email.contains(".com")) {
-            System.out.println("Email Valido");
-            continuar = true;
-        } else {
-            System.out.println("Email Invalido");
-            continuar = false;
-        }
+        do {
+            System.out.println("Digite o seu email por favor");
+            email = scanner.nextLine();
+
+            if(email.contains("@") && email.contains(".com")) {
+                System.out.println("Email Valido");
+                continuar = true;
+            } else {
+                System.out.println("Email Invalido");
+                continuar = false;
+            }
+        } while(continuar == false);
+
+        return continuar;
+    }
+
+    @Override
+    public boolean validSenha() {
+        boolean continuar;
+
+        do{
+            System.out.println("Digite sua senha");
+            CPF = scanner.nextLine();
+
+            if(CPF.length() < 8) {
+                System.out.println("Senha invalida");
+                continuar = false;
+            } else {
+                System.out.println("Senha valida");
+                continuar = true;
+            }
+        } while(continuar == false);
 
         return continuar;
     }
