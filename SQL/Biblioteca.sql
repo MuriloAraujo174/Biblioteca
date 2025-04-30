@@ -9,13 +9,9 @@ create table Autores(
     data_nascimento date not null
 );
 
-<<<<<<< HEAD
-create Cliente(
-    id_usuarios int primary key auto_increment,
-=======
+
 create Clientes(
     id_Clientes int primary key auto_increment,
->>>>>>> 39d7cc6dcfd31d9dedc6dc2d0758fbb89c4c40f5
     nome_completo varchar(50) not null,
     data_nascimento date,
     cpf varchar(15) unique not null,
