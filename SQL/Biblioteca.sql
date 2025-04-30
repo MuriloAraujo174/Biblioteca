@@ -34,7 +34,7 @@ create funcionarios(
     data_nascimento date not null,
     cpf varchar(15) unique not null,
     endereco varchar(100) not null,
-    telefone varchar(15) not null,
+    telefone varchar(15) not null
     email varchar(50) not null,
     senha varchar(20) not null
 );
