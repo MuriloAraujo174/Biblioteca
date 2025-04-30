@@ -10,7 +10,7 @@ create table Autores(
     data_nascimento date not null
 );
 
-create Clientes(
+create table Clientes(
     id_Clientes int primary key auto_increment,
     nome_completo varchar(50) not null,
     data_nascimento date,
@@ -29,7 +29,7 @@ create Clientes(
     senha varchar(20) not null
 );
 
-create funcionarios(
+create table funcionarios(
     id_funcionarios int primary key auto_increment,
     nome varchar(50) not null,
     data_nascimento date,
@@ -40,7 +40,7 @@ create funcionarios(
     senha varchar(20) not null
 );
 
-create Livros(
+create table Livros(
     id_livros int primary key auto_increment,
     titulo varchar(100) not null,
     subtituto varchar(200),
@@ -53,7 +53,7 @@ create Livros(
     quantidade int
 );
 
-create Emprestimos(
+create table Emprestimos(
     id_emprestimos int primary key auto_increment,
     id_livros int not null,
     id_usuarios int not null,
@@ -64,14 +64,14 @@ create Emprestimos(
     foreign key (id_usuarios) references Usuarios(id_usuarios)
 );
 
-create Devolucoes(
+create table Devolucoes(
     id_devolucoes int primary key auto_increment,
     id_emprestimos int not null,
     data_devolucao date not null,
     foreign key (id_emprestimos) references Emprestimos(id_emprestimos)
 );
 
-create Multas(
+create table Multas(
     id_multas int primary key auto_increment,
     id_emprestimos int not null,
     valor decimal(10,2) not null,
@@ -79,7 +79,7 @@ create Multas(
     foreign key (id_emprestimos) references Emprestimos(id_emprestimos)
 );
 
-create itens_emprestimo(
+create table itens_emprestimo(
     id_item int primary key auto_increment,
     id_emprestimos int not null,
     id_livros int not null,
